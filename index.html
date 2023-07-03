@@ -1,43 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="indexx.css">
-    <title>random</title>
+    <title>GALERIA</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">E.E.T.P Nº681</div> 
-        <input type="checkbox" id="toggle">
-        <label for="toggle"> <img class="menu" src="rayas.png" alt="menu"></label>
-        <nav class="nav">  
-            <ul>
-                <li><a href="#">HISTORIA</a></li>
-                <li><a href="#">GALERÌA</a></li>
-                <li><a href="#">NIVELES ACADEMICOS</a>
-                    <ul> 
-                        <li><a href="">CICLO BASICO</a></li>
-                        <li><a href="">CICLO SUPERIOR</a></li>
-                    </ul>    
-                </li>
-                <li><a href="#">LOGROS</a></li>
-                <li><a href="#">ALUMNOS</a></li>
-                <li><a href="#">PROFES</a></li>
-            </ul>
-        </nav>
+    <h1>GALERIA DE FOTOS</h1>
+    <span class="linea"></span>
+    <section class="galeria">
+        <a href="#image1">
+            <img src="img.png" alt="">
+        </a>
+        <a href="#image2">
+            <img src="dos.png" alt="">
+        </a>
+        <a href="#image3">
+            <img src="tres.png" alt="">
+        </a>
+        <a href="#image4">
+            <img src="cuatro.png" alt="">
+        </a>
+        <a href="#image5">
+            <img src="cinco.png" alt="">
+        </a>
+        <a href="#image6">
+            <img src="seis.png" alt="">
+        </a>
 
-    </header>
-    <div class="slider-box"> 
-        <ul> 
-            <li> <img src="Amor_en_un_corazón.jpg" alt=""> </li>
-            <li> <img src="playa.jpg" alt=""> </li> 
-            <li> <img src="tiger.jpg" alt=""> </li> 
-            <li> <img src="img.png" alt=""> </li> 
-        </ul>
-    </div>
+    </section>
+    
+    <article class="light-box" id="image1">
+        <a href="#image6" class="next"><i class="fas fa-arrow-left"></i></a>
+        <img src="img.png" alt="">
+        <a href="#image2" class="next"><i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
 
+    <article class="light-box" id="image2">
+        <a href="#image1" class="next"><i class="fas fa-arrow-left"></i></a>
+        <img src="dos.png" alt="">
+        <a href="#image3" class="next"><i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
 
+    <article class="light-box" id="image3">
+        <a href="#image2" class="next"><i class="fas fa-arrow-left"></i></a>
+        <img src="tres.png" alt="">
+        <a href="#image4" class="next"><i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image4">
+        <a href="#image3" class="next"><i class="fas fa-arrow-left"></i></a>
+        <img src="cuatro.png" alt="">
+        <a href="#image5" class="next"><i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image5">
+        <a href="#image4" class="next"><i class="fas fa-arrow-left"></i></a>
+        <img src="cinco.png" alt="">
+        <a href="#image6" class="next"><i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image6">
+        <a href="#image5" class="next"><i class="fas fa-arrow-left"></i></a>
+        <img src="seis.png" alt="">
+        <a href="#image1" class="next"><i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+   
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"> </script>
 </body>
 </html>
